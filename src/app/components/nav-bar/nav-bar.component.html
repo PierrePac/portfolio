@@ -1,1 +1,8 @@
-<p>nav-bar works!</p>
+<nav class="nav-bar">
+    <a (click)="scrollToSection('home')" [class.active]="currentSectionId === 'home'" #home>Home</a>
+    <a (click)="scrollToSection('profil')" [class.active]="currentSectionId === 'profil'" #profil>Profil</a>
+    <a (click)="scrollToSection('skills')" [class.active]="currentSectionId === 'skills'">Compétences</a>
+    <a (click)="scrollToSection('projects')" [class.active]="currentSectionId === 'projects'">Portfolio</a>
+    <a (click)="scrollToSection('contact')" [class.active]="currentSectionId === 'contact'">Contact</a>
+  </nav>
+  

@@ -9,6 +9,7 @@ import { ProfilComponent } from './components/profil/profil.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { DockModule } from 'primeng/dock';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ContactComponent } from './components/contact/contact.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    DockModule
   ],
   providers: [],
   bootstrap: [AppComponent]
