@@ -6,7 +6,7 @@ import { ViewportScroller } from '@angular/common';
   styleUrl: './nav-bar.component.scss'
 })
 export class NavBarComponent {
-  currentSectionId = '';
+  currentSectionId = 'home';
 
   constructor(private viewportScroller: ViewportScroller){}
 
