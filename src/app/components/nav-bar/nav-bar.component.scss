@@ -10,9 +10,10 @@
   }
 
   .navbar {
-    padding-left: 25vw; 
+    padding-left: 15vw; 
     padding-right: 25vw; 
-    align-items: center; 
+    align-items: center;
+    transition: background-color 0.5s ease;
   
     .navbar-brand {
       flex-grow: 0; 
@@ -27,18 +28,21 @@
       justify-content: flex-end; 
   
       .navbar-nav {
+        cursor: pointer;
         .nav-link {
           font-weight: bold;
           color: white;
+          font-size: 2rem;
+          font-family: Arial, Helvetica, sans-serif;
           &:first-letter {
             text-transform: uppercase;
           }
           &:hover {
-            color: wheat;
-            
+            color: #B3DEE5;
           }
           &.active {
-            color: red;
+            color: #FFA101;
+            text-decoration: underline;
           }
         }
   
@@ -49,3 +53,6 @@
     }
   }
   
+  .menu-bg {
+    background-color: #12013A; 
+  }

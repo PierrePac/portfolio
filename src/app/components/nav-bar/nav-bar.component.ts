@@ -14,6 +14,7 @@ export class NavBarComponent {
   @HostListener('window:scroll', ['$event'])
   onWindowScroll() {
     const sections = Array.from(document.querySelectorAll('section'));
+    const navbar = document.querySelector('nav');
     let foundSectionId = '';
 
     for (const section of sections) {
@@ -26,6 +27,11 @@ export class NavBarComponent {
     }
     if (foundSectionId !== ''){
       this.currentSectionId = foundSectionId;
+      if (this.currentSectionId !== 'home') {
+        navbar?.classList.add('menu-bg')
+      } else {
+        navbar?.classList.remove('menu-bg')
+      }
     }
     
   }
