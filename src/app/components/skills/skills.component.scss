@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Lato&family=Nunito&family=Playfair+Display:ital@1&family=Prata&family=Raleway:ital,wght@1,100&family=Roboto&family=Roboto+Condensed&family=Teko&display=swap');
 :host {
     display: block;
     min-height: 100vh; 
@@ -73,3 +74,102 @@
   opacity: 1;
   transform: translateX(0);
 }
+
+
+
+.header, .left-column, .right-column {
+  border: 4px solid; 
+  margin: 0; 
+  padding: 0;
+}
+
+.header{
+  min-height: 20vh;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  margin: 25px;
+}
+
+.row {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.row [class^="col-"], .row [class*=" col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.left-column, .right-column {
+  height: 600px;
+}
+
+.header {
+  border-color: yellow;
+}
+
+.left-column {
+  border-color: green;
+}
+
+.right-column {
+  border-color: blue;
+}
+
+.block {
+  border: 1px solid #000;
+  margin-bottom: -1px;
+
+}
+
+.block:last-child {
+  margin-bottom: 0;
+}
+
+.col-md-3 .block {
+  height: 25%;
+}
+
+.col-md-9 .block {
+  height: 50%;
+}
+
+.btn{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  background: linear-gradient(90deg, #0066CC 0%, #c500cc 100%);
+  padding: 15px 20px;
+  border: 2px solid #0066cc;
+  box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+  border-radius: 50px;
+  transition : 1000ms;
+  transform: translateY(0);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  text-transform: lowercase;
+  margin: 15px auto;
+  a{
+    text-decoration: none;
+    color: #fff;
+  }
+}
+
+.btn:hover{
+
+  transition : 1000ms;
+  padding: 10px 50px;
+  transform : translateY(-12px);
+  background: linear-gradient(90deg, #0066CC 0%, #c500cc 100%);
+  
+  border: solid 2px #0066cc;
+
+  a{
+    color: #e9c46a;
+  }
+}
+
+

@@ -7,7 +7,7 @@
     <h1 class="title">Compétences</h1>
     <div class="skills-cv-container">
         <div class="skills">
-            <h2>Front-end</h2>
+            <h2 class="mt-0">Front-end</h2>
             <div class="skill html" appScrollAnimation>
                 <p>HTML</p>
                 <p-progressBar [value]="htmlValue" showValue="false"></p-progressBar>
@@ -59,12 +59,40 @@
                 <p>Postman</p>
                 <p-progressBar [value]="postmanValue" showValue="false"></p-progressBar>
             </div>
+            <div class="skill looping" appScrollAnimation>
+                <p>Looping</p>
+                <p-progressBar [value]="loopingValue" showValue="false"></p-progressBar>
+            </div>
             
         </div>
-        <div class="cv">
-            <h2>Mon CV</h2>
-            
-            <p><a href="path_to_your_cv.pdf" target="_blank">Télécharger mon CV</a></p>
+        <div class="cv ">
+            <div class="container-fluid">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="header">
+                        <img src="assets/images/profil_cv.jpg" alt="Profile Picture" class="profile-pic img-fluid">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-3">
+                    <div class="left-column">
+                        <div class="block">Bloc 1</div>
+                        <div class="block">Bloc 2</div>
+                        <div class="block">Bloc 3</div>
+                        <div class="block">Bloc 4</div>
+                    </div>
+                  </div>
+                  <div class="col-md-9">
+                    <div class="right-column">
+                        <div class="block">Bloc 5</div>
+                        <div class="block">Bloc 6</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            <button class="btn"><a href="path_to_your_cv.pdf" target="_blank">Télécharger mon CV</a></button>
         </div>
     </div>
 </section>

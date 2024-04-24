@@ -17,5 +17,6 @@ export class SkillsComponent {
   symfonyValue: number = 75;
   sqlValue: number = 75;
   postmanValue: number = 75;
+  loopingValue: number = 75;
 
 }
