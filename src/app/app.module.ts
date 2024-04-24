@@ -10,6 +10,9 @@ import { SkillsComponent } from './components/skills/skills.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { DockModule } from 'primeng/dock';
+import { ProgressBarModule } from 'primeng/progressbar';
+import { ToastModule } from 'primeng/toast';
+import { ScrollAnimationDirective } from './directives/scrollAnimation/scroll-animation.directive';
 
 @NgModule({
   declarations: [
@@ -19,12 +22,15 @@ import { DockModule } from 'primeng/dock';
     ProfilComponent,
     SkillsComponent,
     ProjectsComponent,
-    ContactComponent
+    ContactComponent,
+    ScrollAnimationDirective
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    DockModule
+    DockModule,
+    ProgressBarModule,
+    ToastModule
   ],
   providers: [],
   bootstrap: [AppComponent]

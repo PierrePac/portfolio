@@ -1,2 +1,70 @@
 
-<section id="skills"><p>skills works!</p></section>
+<section id="skills">
+    <div class="bandeau d-flex justify-content-center align-items-center flex-column">
+        <h1>Actuellement :</h1>
+        <p>En recherche d'emploi</p>
+    </div>
+    <h1 class="title">Compétences</h1>
+    <div class="skills-cv-container">
+        <div class="skills">
+            <h2>Front-end</h2>
+            <div class="skill html" appScrollAnimation>
+                <p>HTML</p>
+                <p-progressBar [value]="htmlValue" showValue="false"></p-progressBar>
+            </div>
+            <div class="skill css" appScrollAnimation>
+                <p>CSS</p>
+                <p-progressBar [value]="cssValue" showValue="false"></p-progressBar>
+            </div>
+            <div class="skill javascript" appScrollAnimation>
+                <p>JavaScript</p>
+                <p-progressBar [value]="javascriptValue" showValue="false"></p-progressBar>
+            </div>
+            <div class="skill angular" appScrollAnimation>
+                <p>Angular</p>
+                <p-progressBar [value]="angularValue" showValue="false"></p-progressBar>
+            </div>
+            <div class="skill bootstrap"appScrollAnimation>
+                <p>Bootstrap</p>
+                <p-progressBar [value]="bootstrapValue" showValue="false"></p-progressBar>
+            </div>
+            <h2>Back-end</h2>
+            <div class="skill java" appScrollAnimation>
+                <p>Java</p>
+                <p-progressBar [value]="javaValue" showValue="false"></p-progressBar>
+            </div>
+            <div class="skill php" appScrollAnimation>
+                <p>PHP</p>
+                <p-progressBar [value]="phpValue" showValue="false"></p-progressBar>
+            </div>
+            <div class="skill sql" appScrollAnimation>
+                <p>SQL</p>
+                <p-progressBar [value]="sqlValue" showValue="false"></p-progressBar>
+            </div>
+            <div class="skill postman" appScrollAnimation>
+                <p>Postman</p>
+                <p-progressBar [value]="postmanValue" showValue="false"></p-progressBar>
+            </div>
+            <h2>Framework</h2>
+            <div class="skill springboot" appScrollAnimation>
+                <p>SpringBoot</p>
+                <p-progressBar [value]="springbootValue" showValue="false"></p-progressBar>
+            </div>
+            <div class="skill symfony" appScrollAnimation>
+                <p>Symfony</p>
+                <p-progressBar [value]="symfonyValue" showValue="false"></p-progressBar>
+            </div>
+            <h2>Outils</h2>
+            <div class="skill postman" appScrollAnimation>
+                <p>Postman</p>
+                <p-progressBar [value]="postmanValue" showValue="false"></p-progressBar>
+            </div>
+            
+        </div>
+        <div class="cv">
+            <h2>Mon CV</h2>
+            
+            <p><a href="path_to_your_cv.pdf" target="_blank">Télécharger mon CV</a></p>
+        </div>
+    </div>
+</section>

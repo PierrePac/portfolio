@@ -20,18 +20,18 @@ export class TypeWriterService {
   );
  }
 
- typeEffect(word: string) {
+ typeEffect(word: string, speedForward: number, speedBackward: number) {
   return concat(
-    this.type({ word, speed: 100}),
+    this.type({ word, speed: speedForward}),
     of('').pipe(delay(1200), ignoreElements()),
-    this.type({ word, speed: 60, backward: true }),
+    this.type({ word, speed: speedBackward, backward: true }),
     of('').pipe(delay(300), ignoreElements())
   );
  }
 
- getTypewriterEffect(titles: string[]) {
+ getTypewriterEffect(titles: string[], speedForward: number, speedBackward: number) {
   return from(titles).pipe(
-    concatMap(title => this.typeEffect(title)),
+    concatMap(title => this.typeEffect(title, speedForward, speedBackward)),
     repeat()
   );
  }
