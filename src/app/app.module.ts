@@ -13,6 +13,9 @@ import { DockModule } from 'primeng/dock';
 import { ProgressBarModule } from 'primeng/progressbar';
 import { ToastModule } from 'primeng/toast';
 import { ScrollAnimationDirective } from './directives/scrollAnimation/scroll-animation.directive';
+import { CardModule } from 'primeng/card';
+import { ButtonModule } from 'primeng/button';
+import { CarouselModule } from 'primeng/carousel';
 
 @NgModule({
   declarations: [
@@ -30,7 +33,10 @@ import { ScrollAnimationDirective } from './directives/scrollAnimation/scroll-an
     AppRoutingModule,
     DockModule,
     ProgressBarModule,
-    ToastModule
+    ToastModule,
+    CardModule,
+    ButtonModule,
+    CarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]

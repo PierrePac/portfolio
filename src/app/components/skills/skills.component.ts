@@ -22,7 +22,6 @@ export class SkillsComponent {
 
   toggleZoom() {
     this.isZoomed = !this.isZoomed;
-    console.log(this.isZoomed);
   }
 
 }
