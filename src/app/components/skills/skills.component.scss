@@ -17,14 +17,14 @@
     h1 {
       font-weight: bold;
       font-family: Arial, Helvetica, sans-serif;
-      font-size: 5rem;
+      font-size: 3rem;
       padding-bottom: 2rem;
       color: whitesmoke;
     }
   
     p {
       font-family: Arial, Helvetica, sans-serif;
-      font-size: 3rem;
+      font-size: 1.5rem;
       color: whitesmoke;
       text-align: justify;
       text-justify: inter-word;
@@ -32,15 +32,15 @@
   }
   .title {
     text-align: center;
-    margin: 75px 0 100px 0;
+    margin: 25px 0 50px 0;
     color: whitesmoke;
-    font-size: 5rem;
+    font-size: 3rem;
     font-family: Arial, Helvetica, sans-serif
   }
 
   .skills-cv-container {
     display: grid;
-    grid-template-columns: 40vw 40vw; 
+    grid-template-columns: 35vw 35vw; 
     gap: 4vw;
     justify-content: center;
     padding: 20px; 
@@ -53,10 +53,11 @@
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     color: whitesmoke;
 
+
     h2{
       text-align: center;
-      margin: 75px 0 25px 0;
-      font-size: 3rem;
+      margin: 25px 0 5px 0;
+      font-size: 2rem;
     }
 }
 
@@ -67,7 +68,7 @@
   transition: opacity 0.5s ease-out, transform 0.5s ease-out;
   p{
     margin-bottom: 0;
-    font-size: 2rem;
+    font-size: 1.2rem;
   }
 }
 .skill.visible {
@@ -75,21 +76,80 @@
   transform: translateX(0);
 }
 
+.cv-container {
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow:
+  0px 0px 2px rgba(255, 161, 1, 0.014),
+  0px 0px 4.7px rgba(255, 161, 1, 0.082),
+  0px 0px 9.6px rgba(255, 161, 1, 0.312),
+  0px 0px 29px rgba(255, 161, 1, 0.51);
+  position: relative;
+  transition: filter 0.3s transform 0.3s ease, z-index 0s linear 0.3s;
+  cursor: pointer;
+  z-index: 1;
 
+  .pi-eye{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 48px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    color: white;
+  }
+
+  &.zoomed-in {
+    position: absolute;
+    transform: translate(-50%, -50%) scale(1.5);
+    z-index: 1000;
+    transition: transform 0.3s ease, z-index 0s linear;
+
+    &:hover{
+      filter:grayscale(0%);
+
+      .pi-eye{
+        opacity: 0;
+      }
+
+    }
+    .logo {
+      height: 35px;
+    }
+  }
+}
+
+.cv-container:hover {
+  filter:grayscale(100%);
+}
+
+.cv-container:hover .pi-eye {
+  opacity: 1; 
+}
+
+.flex-fill {
+  flex: 1;
+}
 
 .header, .left-column, .right-column {
-  border: 4px solid; 
   margin: 0; 
   padding: 0;
 }
 
 .header{
   min-height: 20vh;
+  background-image: url('/assets/images/bg_cv_header.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .profile-pic {
   border-radius: 50%;
-  margin: 25px;
+  height: 16vh;
+  width: 16vh;
+  margin: 2vh;
 }
 
 .row {
@@ -102,24 +162,48 @@
   padding-left: 0;
 }
 
-.left-column, .right-column {
-  height: 600px;
+
+.logo {
+  height: 25px;
+  margin: 5px 10px;
 }
 
-.header {
-  border-color: yellow;
+.left-column, .right-column {
+  color: black;
+  padding: 5px;
+  h3{
+    color: #ffae00;
+    font-size: 1rem;
+    text-align: center;
+  }
+  h4 {
+    font-size: 0.8rem;
+    
+  }
+  p{
+    font-size: 0.6rem;
+    margin: 5px;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+
 }
 
 .left-column {
-  border-color: green;
+  background-color: #e3e3e3;
+  h3{
+    text-transform: capitalize;
+  }
 }
 
 .right-column {
-  border-color: blue;
+  background-color: #ededed;
+  h3{
+    text-transform: uppercase;
+  }
 }
 
 .block {
-  border: 1px solid #000;
   margin-bottom: -1px;
 
 }

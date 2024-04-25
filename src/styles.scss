@@ -1,15 +1,6 @@
-/* You can add global styles to this file, and also import other style files */
-/* Order */
-@layer reset, primeng;
 
-/* Reset CSS */
-/* Prime NG */
-@layer reset {
-    button,
-    input {
-        /* CSS to Reset */
-    }
-}
+@layer reset, primeng;
+@import "primeicons/primeicons.css";
 
 *{
     margin: 0;
