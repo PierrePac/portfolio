@@ -18,6 +18,7 @@ export class SkillsComponent {
   sqlValue: number = 75;
   postmanValue: number = 75;
   loopingValue: number = 75;
+  gitValue: number = 75;
   isZoomed: boolean = false;
 
   toggleZoom() {

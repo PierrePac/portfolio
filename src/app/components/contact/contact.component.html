@@ -1,2 +1,90 @@
+<section id="contact">
+    <p-toast position="top-center" key="tc"></p-toast>
+    <h1 class="title">Contactez-moi</h1>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 w-100">
+                <div class="row">
+                    <div class="col d-flex flex-column justify-content-center align-items-center">
+                        <form class="w-100" [formGroup]="contactForm" (ngSubmit)="onSubmit()" novalidate>
+                            <div class="form-group mt-4 mb-2 w-50">
+                                <span class="p-float-label">
+                                    <input type="text" id="name" formControlName="name" pInputText
+                                        class="form-control" />
+                                    <label for="name">Nom *</label>
+                                </span>
+                                <div *ngIf="contactForm.controls['name'].invalid && contactForm.controls['name'].touched"
+                                    class="invalid-feedback">
+                                    Vous devez renseigner votre nom !
+                                </div>
+                            </div>
 
-<section id="contact"><p>contact works!</p></section>
+                            <div class="form-group mt-4 mb-2 w-50">
+                                <span class="p-float-label">
+                                    <input type="text" id="company" formControlName="company" pInputText
+                                        class="form-control" />
+                                    <label for="company">Société</label>
+                                </span>
+                            </div>
+
+                            <div class="form-group mt-4 mb-2 w-50">
+                                <span class="p-float-label">
+                                    <input type="text" id="phone" formControlName="phone" pInputText
+                                        class="form-control" />
+                                    <label for="phone">Téléphonne</label>
+                                </span>
+                            </div>
+
+                            <div class="form-group mt-4 mb-2 w-50">
+                                <span class="p-float-label">
+                                    <input type="email" id="email" formControlName="email" pInputText
+                                        class="form-control" />
+                                    <label for="email">Email *</label>
+                                </span>
+                                <div *ngIf="contactForm.controls['email'].invalid && contactForm.controls['email'].touched"
+                                    class="invalid-feedback">
+                                    Vous devez renseigner votre e-mail !
+                                </div>
+                            </div>
+
+                            <div class="form-group mt-4 mb-2 w-75">
+                                <span class="p-float-label">
+                                    <textarea id="message" formControlName="message" pInputTextarea
+                                        class="form-control"></textarea>
+                                    <label for="message">Message *</label>
+                                </span>
+                                <div *ngIf="contactForm.controls['message'].invalid && contactForm.controls['message'].touched"
+                                    class="invalid-feedback">
+                                    Un message est requis !
+                                </div>
+                            </div>
+                            <button type="submit" pButton label="Envoyer" [disabled]="!contactForm.valid" (click)="showSucess()" class="btn btn-primary mt-4 align-items-center"></button>
+                        </form>
+                    </div>
+                    <div class="col d-flex flex-column justify-content-center align-items-center">
+                        <div class="contact">
+                            <div class="mail d-flex flex-row nowrap justify-content-center">
+                                <i class="pi pi-at me-2" style="color: white"></i>
+                                <p>pac.pierre&#64;gmail.com</p>
+                            </div>
+                            <div class="phone d-flex flex-row nowrap justify-content-center">
+                                <i class="pi pi-phone me-2" style="color: white"></i>
+                                <p>06.08.11.21.79</p>
+                            </div>
+                            <div class="city d-flex flex-row nowrap justify-content-center">
+                                <i class="pi pi-home me-2" style="color: white"></i>
+                                <p>80580, Pont Remy</p>
+                            </div>
+                            <div class="social d-flex flex-row nowrap justify-content-around">
+                                <i class="pi pi-linkedin me-2" style="color: white; font-size: 2.5rem"></i>
+                                <i class="pi pi-github me-2" style="color: white; font-size: 2.5rem"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</section>
