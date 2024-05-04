@@ -67,7 +67,8 @@
         </div>
         <div class="cv ">
             <div class="container-fluid">
-                <div class="cv-container" [class.zoomed-in]="isZoomed" (click)="toggleZoom()">
+                <div class="overlay" *ngIf="isZoomed" (click)="toggleZoom()"></div>
+                <div class="cv-container" [class.zoomed-in]="isZoomed" (click)="isZoomed ? toggleZoom() : isZoomed = true">
                     <div class="row">
                       <div class="col-12">
                         <div class="header">

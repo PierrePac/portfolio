@@ -19,6 +19,14 @@
       font-size: 3rem;
       padding-bottom: 2rem;
       color: whitesmoke;
+      text-shadow:
+        -2px -2px 0 #363732,  
+         2px -2px 0 #363732,
+        -2px  2px 0 #363732,
+         2px  2px 0 #363732,
+        -1px -1px 0 #363732,  
+         1px -1px 0 #363732,
+        ;
     }
   
     p {
@@ -27,6 +35,12 @@
       color: whitesmoke;
       text-align: justify;
       text-justify: inter-word;
+      text-shadow:
+        -1px -1px 0 #363732,  
+        1px -1px 0 #363732,
+        -1px  1px 0 #363732,
+        1px  1px 0 #363732
+        ;
     }
   }
   
@@ -44,5 +58,8 @@
 
 .indicators {
   color: green;
+  border-radius: 25px;
+  margin: 0 5px;
 }
+
   

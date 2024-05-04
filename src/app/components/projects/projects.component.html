@@ -1,15 +1,14 @@
 <section id="projects">
   <div class="bandeau d-flex justify-content-center align-items-center flex-column">
-    <h1>Actuellement :</h1>
-    <p>En recherche d'emploi</p>
+    <h1>Projet actuel :</h1>
+    <p>Conception d'une application de gestion bancaire en Java et Angular pour PC et mobile</p>
   </div>
   <div class="projects">
     <h1 class="title">Compétences</h1>
-    <p-carousel [value]="projects" [circular]="true" [numVisible]="3" [numScroll]="1" autoplayInterval="3000"
-      indicatorStyleClass="indicators">
+    <p-carousel [value]="projects" [circular]="true" [numVisible]="3" [numScroll]="1" autoplayInterval="3000" [indicatorStyle]="{borderRadius: '15px', margin: '0 5px'}">
       <ng-template pTemplate="item" let-project>
         <div class="border-1 surface-border border-round m-2 text-center py-5 px-3">
-          <p-card header="{{ project.title }}" subheader="{{ project.technologies }}" [style]="{ width: '360px' }">
+          <p-card header="{{ project.title }}" subheader="{{ project.technologies }}" >
             <ng-template pTemplate="header">
               <img alt="Card" src="{{ project.imageSrc }}" />
             </ng-template>
@@ -19,4 +18,6 @@
       </ng-template>
     </p-carousel>
   </div>
+
+
 </section>

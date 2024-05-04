@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 })
 export class HomeComponent implements OnInit {
   typedText$: Observable<string> | undefined;
-  titles = ["développeur web", "développeur full-stack", "développeur d'application"];
+  titles = ["développeur web", "développeur full-stack", "développeur d'application", "concepteur logiciel"];
   sppedForward = 100;
   speedBackward = 60;
 
