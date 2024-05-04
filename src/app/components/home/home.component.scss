@@ -11,7 +11,6 @@
 
   h1, p {
     font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
     background: linear-gradient(318deg, #ffa101, #24d6f3);
     background-size: 400% 400%;
     -webkit-background-clip: text;
@@ -21,11 +20,11 @@
   }
 
   h1{
-    font-size: 5rem;
+    font-size: 2.8rem;
   }
   
   p{
-    font-size: 3rem;
+    font-size: 1.1rem;
   }
 
   .info-button {
@@ -37,7 +36,7 @@
     -webkit-text-fill-color: transparent;
     -webkit-animation: gradient 5s ease infinite;
     animation: gradient 5s ease infinite;
-    font-size: 1.5rem; 
+    font-size: 1rem; 
     padding: 10px 20px; 
     text-align: center; 
     text-decoration: none; 

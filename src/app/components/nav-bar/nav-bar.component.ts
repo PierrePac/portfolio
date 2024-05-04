@@ -8,7 +8,6 @@ import { Component, HostListener } from '@angular/core';
 })
 export class NavBarComponent {
   currentSectionId = 'home';
-  public isCollapsed = true;
   
   constructor(private viewportScroller: ViewportScroller){}
 

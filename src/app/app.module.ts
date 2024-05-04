@@ -34,7 +34,6 @@ import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
     ProjectsComponent,
     ContactComponent,
     ScrollAnimationDirective,
-    NgbCollapseModule
   ],
   imports: [
     BrowserModule,
@@ -51,7 +50,7 @@ import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
     InputTextModule,
     RecaptchaModule,
     RecaptchaFormsModule,
-    NgbModule
+    NgbCollapseModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,11 +1,13 @@
 
 @layer reset, primeng;
 @import "primeicons/primeicons.css";
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';
 
 *{
     margin: 0;
+    font-family: 'Montserrat', serif;
 }
 
 
-/* Importing Bootstrap SCSS file. */
-@import 'bootstrap/scss/bootstrap';
+

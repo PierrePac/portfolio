@@ -1,8 +1,8 @@
 :host {
     display: block;
     position: fixed;
-    width: 100%;
-    height: 10vh; 
+    width: 100vw;
+    min-height: 10vh; 
     top: 0;
     left: 0;
     z-index: 100;
@@ -10,17 +10,15 @@
   }
 
   .navbar {
-    padding-left: 15vw; 
-    padding-right: 25vw; 
+    padding-left: 5vw; 
+    padding-right: 5vw; 
     align-items: center;
     transition: background-color 0.5s ease;
   
     .navbar-brand {
       flex-grow: 0; 
-      img {
-        height: 10vh; 
-        width: auto; 
-      }
+      height: 10vh; 
+      width: auto; 
     }
   
     .navbar-collapse {
@@ -30,10 +28,9 @@
       .navbar-nav {
         cursor: pointer;
         .nav-link {
-          font-weight: bold;
+          // font-weight: bold;
           color: white;
-          font-size: 1.4rem;
-          font-family: Arial, Helvetica, sans-serif;
+          font-size: 1.2rem;
           &:first-letter {
             text-transform: uppercase;
           }
@@ -52,6 +49,7 @@
       }
     }
   }
+  
   
   .menu-bg {
     background-color: #12013A; 
