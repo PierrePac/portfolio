@@ -3,22 +3,28 @@
     <a class="navbar-brand" href="#">
       <img src="/assets/images/logo.png" alt="Logo">
     </a>
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+    <!-- Bouton burger pour les petits écrans -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" 
+    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" (click)="isCollapsed = !isCollapsed">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Menu principal (se rétracte dans un menu burger en vue mobile) -->
+    <div class="collapse navbar-collapse " id="navbarNav" >
       <ul class="navbar-nav">
         <li class="nav-item">
           <a class="nav-link" (click)="scrollToSection('home')" [class.active]="currentSectionId === 'home'">Accueil</a>
         </li>
-          <li class="nav-item">
-            <a class="nav-link" (click)="scrollToSection('profil')" [class.active]="currentSectionId === 'profil'">Profil</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" (click)="scrollToSection('skills')" [class.active]="currentSectionId === 'skills'">Compétences</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" (click)="scrollToSection('projects')" [class.active]="currentSectionId === 'projects'">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" (click)="scrollToSection('contact')" [class.active]="currentSectionId === 'contact'">Contact</a>
+        <li class="nav-item">
+          <a class="nav-link" (click)="scrollToSection('profil')" [class.active]="currentSectionId === 'profil'">Profil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="scrollToSection('skills')" [class.active]="currentSectionId === 'skills'">Compétences</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="scrollToSection('projects')" [class.active]="currentSectionId === 'projects'">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="scrollToSection('contact')" [class.active]="currentSectionId === 'contact'">Contact</a>
         </li>
       </ul>
     </div>

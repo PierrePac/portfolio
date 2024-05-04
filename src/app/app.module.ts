@@ -20,6 +20,8 @@ import { CarouselModule } from 'primeng/carousel';
 import { TooltipModule } from 'primeng/tooltip';
 import { ReactiveFormsModule } from '@angular/forms';
 import { InputTextModule } from 'primeng/inputtext';
+import { RecaptchaModule, RecaptchaFormsModule } from 'ng-recaptcha';
+
 
 @NgModule({
   declarations: [
@@ -44,7 +46,9 @@ import { InputTextModule } from 'primeng/inputtext';
     CarouselModule,
     TooltipModule,
     ReactiveFormsModule,
-    InputTextModule
+    InputTextModule,
+    RecaptchaModule,
+    RecaptchaFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
