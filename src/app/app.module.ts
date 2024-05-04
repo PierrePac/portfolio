@@ -21,6 +21,7 @@ import { TooltipModule } from 'primeng/tooltip';
 import { ReactiveFormsModule } from '@angular/forms';
 import { InputTextModule } from 'primeng/inputtext';
 import { RecaptchaModule, RecaptchaFormsModule } from 'ng-recaptcha';
+import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { RecaptchaModule, RecaptchaFormsModule } from 'ng-recaptcha';
     SkillsComponent,
     ProjectsComponent,
     ContactComponent,
-    ScrollAnimationDirective
+    ScrollAnimationDirective,
+    NgbCollapseModule
   ],
   imports: [
     BrowserModule,
@@ -48,7 +50,8 @@ import { RecaptchaModule, RecaptchaFormsModule } from 'ng-recaptcha';
     ReactiveFormsModule,
     InputTextModule,
     RecaptchaModule,
-    RecaptchaFormsModule
+    RecaptchaFormsModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

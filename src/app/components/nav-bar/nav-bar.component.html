@@ -9,7 +9,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <!-- Menu principal (se rétracte dans un menu burger en vue mobile) -->
-    <div class="collapse navbar-collapse " id="navbarNav" >
+    <div class="collapse navbar-collapse " id="navbarNav" [ngbCollapse]="isCollapsed">
       <ul class="navbar-nav">
         <li class="nav-item">
           <a class="nav-link" (click)="scrollToSection('home')" [class.active]="currentSectionId === 'home'">Accueil</a>
