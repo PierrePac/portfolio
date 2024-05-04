@@ -18,7 +18,7 @@
 
     h1 {
       font-weight: bold;
-      font-size: 2rem;
+      font-size: 1.5rem;
       padding-bottom: 1rem;
       color: whitesmoke;
       text-shadow:
@@ -52,13 +52,15 @@
   }
 
   .skills-cv-container {
-    display: grid;
-    grid-template-columns: 35vw 35vw; 
-    gap: 4vw;
-    justify-content: center;
-    padding: 20px; 
-    margin: 0 auto; 
-    max-width: 90vw; 
+    // display: grid;
+    // grid-template-columns: 35vw 35vw; 
+    // gap: 4vw;
+    .row{
+      justify-content: center;
+      padding: 20px; 
+      margin: 0 auto; 
+      max-width: 90vw; 
+    }
 }
 
 .skills, .cv {

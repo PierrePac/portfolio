@@ -35,12 +35,4 @@ export class ContactComponent implements OnInit {
   showSucess() {
     this.messageService.add({ key: 'tc', severity: 'success', summary: 'Success', detail: 'Message bien envoyé !' });
   }
-
-  resolved(captchaResponse: string | null): void {
-    if (captchaResponse) {
-      console.log(`Resolved captcha with response: ${captchaResponse}`);
-    } else {
-      console.log("Captcha expired or failed, please retry.");
-    }
-  }
 }

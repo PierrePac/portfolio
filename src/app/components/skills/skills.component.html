@@ -1,153 +1,199 @@
-
 <section id="skills">
     <div class="bandeau d-flex justify-content-center align-items-center flex-column">
         <h1>Actuellement :</h1>
         <p>En recherche d'emploi</p>
     </div>
     <h1 class="title">Compétences</h1>
-    <div class="skills-cv-container">
-        <div class="skills">
-            <h2 class="mt-0">Front-end</h2>
-            <div class="skill html" appScrollAnimation>
-                <p>HTML</p>
-                <p-progressBar [value]="htmlValue" showValue="false" color="#ffae00" [style]="{height: '15px'}"></p-progressBar>
+    <div class="skills-cv-container container">
+        <div class="row justify-content-evenly">
+            <div class="skills col-11 col-md-5 ">
+                <h2 class="mt-0">Front-end</h2>
+                <div class="skill html" appScrollAnimation>
+                    <p>HTML</p>
+                    <p-progressBar [value]="htmlValue" showValue="false" color="#ffae00"
+                        [style]="{height: '15px'}"></p-progressBar>
+                </div>
+                <div class="skill css" appScrollAnimation>
+                    <p>CSS</p>
+                    <p-progressBar [value]="cssValue" showValue="false" color="#ffae00"
+                        [style]="{height: '15px'}"></p-progressBar>
+                </div>
+                <div class="skill javascript" appScrollAnimation>
+                    <p>JavaScript</p>
+                    <p-progressBar [value]="javascriptValue" showValue="false" color="#ffae00"
+                        [style]="{height: '15px'}"></p-progressBar>
+                </div>
+                <div class="skill angular" appScrollAnimation>
+                    <p>Angular</p>
+                    <p-progressBar [value]="angularValue" showValue="false" color="#ffae00"
+                        [style]="{height: '15px'}"></p-progressBar>
+                </div>
+                <div class="skill bootstrap" appScrollAnimation>
+                    <p>Bootstrap</p>
+                    <p-progressBar [value]="bootstrapValue" showValue="false" color="#ffae00"
+                        [style]="{height: '15px'}"></p-progressBar>
+                </div>
+                <h2>Back-end</h2>
+                <div class="skill java" appScrollAnimation>
+                    <p>Java</p>
+                    <p-progressBar [value]="javaValue" showValue="false" color="#ffae00"
+                        [style]="{height: '15px'}"></p-progressBar>
+                </div>
+                <div class="skill php" appScrollAnimation>
+                    <p>PHP</p>
+                    <p-progressBar [value]="phpValue" showValue="false" color="#ffae00"
+                        [style]="{height: '15px'}"></p-progressBar>
+                </div>
+                <div class="skill sql" appScrollAnimation>
+                    <p>SQL</p>
+                    <p-progressBar [value]="sqlValue" showValue="false" color="#ffae00"
+                        [style]="{height: '15px'}"></p-progressBar>
+                </div>
+                <h2>Framework</h2>
+                <div class="skill springboot" appScrollAnimation>
+                    <p>SpringBoot</p>
+                    <p-progressBar [value]="springbootValue" showValue="false" color="#ffae00"
+                        [style]="{height: '15px'}"></p-progressBar>
+                </div>
+                <div class="skill symfony" appScrollAnimation>
+                    <p>Symfony</p>
+                    <p-progressBar [value]="symfonyValue" showValue="false" color="#ffae00"
+                        [style]="{height: '15px'}"></p-progressBar>
+                </div>
+                <h2>Outils</h2>
+                <div class="skill postman" appScrollAnimation>
+                    <p>Postman</p>
+                    <p-progressBar [value]="postmanValue" showValue="false" color="#ffae00"
+                        [style]="{height: '15px'}"></p-progressBar>
+                </div>
+                <div class="skill looping" appScrollAnimation>
+                    <p>Looping</p>
+                    <p-progressBar [value]="loopingValue" showValue="false" color="#ffae00"
+                        [style]="{height: '15px'}"></p-progressBar>
+                </div>
+                <div class="skill git" appScrollAnimation>
+                    <p>Git</p>
+                    <p-progressBar [value]="gitValue" showValue="false" color="#ffae00"
+                        [style]="{height: '15px'}"></p-progressBar>
+                </div>
+
             </div>
-            <div class="skill css" appScrollAnimation>
-                <p>CSS</p>
-                <p-progressBar [value]="cssValue" showValue="false" color="#ffae00" [style]="{height: '15px'}"></p-progressBar>
-            </div>
-            <div class="skill javascript" appScrollAnimation>
-                <p>JavaScript</p>
-                <p-progressBar [value]="javascriptValue" showValue="false" color="#ffae00" [style]="{height: '15px'}"></p-progressBar>
-            </div>
-            <div class="skill angular" appScrollAnimation>
-                <p>Angular</p>
-                <p-progressBar [value]="angularValue" showValue="false" color="#ffae00" [style]="{height: '15px'}"></p-progressBar>
-            </div>
-            <div class="skill bootstrap"appScrollAnimation>
-                <p>Bootstrap</p>
-                <p-progressBar [value]="bootstrapValue" showValue="false" color="#ffae00" [style]="{height: '15px'}"></p-progressBar>
-            </div>
-            <h2>Back-end</h2>
-            <div class="skill java" appScrollAnimation>
-                <p>Java</p>
-                <p-progressBar [value]="javaValue" showValue="false" color="#ffae00" [style]="{height: '15px'}"></p-progressBar>
-            </div>
-            <div class="skill php" appScrollAnimation>
-                <p>PHP</p>
-                <p-progressBar [value]="phpValue" showValue="false" color="#ffae00" [style]="{height: '15px'}"></p-progressBar>
-            </div>
-            <div class="skill sql" appScrollAnimation>
-                <p>SQL</p>
-                <p-progressBar [value]="sqlValue" showValue="false" color="#ffae00" [style]="{height: '15px'}"></p-progressBar>
-            </div>
-            <h2>Framework</h2>
-            <div class="skill springboot" appScrollAnimation>
-                <p>SpringBoot</p>
-                <p-progressBar [value]="springbootValue" showValue="false" color="#ffae00" [style]="{height: '15px'}"></p-progressBar>
-            </div>
-            <div class="skill symfony" appScrollAnimation>
-                <p>Symfony</p>
-                <p-progressBar [value]="symfonyValue" showValue="false" color="#ffae00" [style]="{height: '15px'}"></p-progressBar>
-            </div>
-            <h2>Outils</h2>
-            <div class="skill postman" appScrollAnimation>
-                <p>Postman</p>
-                <p-progressBar [value]="postmanValue" showValue="false" color="#ffae00" [style]="{height: '15px'}"></p-progressBar>
-            </div>
-            <div class="skill looping" appScrollAnimation>
-                <p>Looping</p>
-                <p-progressBar [value]="loopingValue" showValue="false" color="#ffae00" [style]="{height: '15px'}"></p-progressBar>
-            </div>
-            <div class="skill git" appScrollAnimation>
-                <p>Git</p>
-                <p-progressBar [value]="gitValue" showValue="false" color="#ffae00" [style]="{height: '15px'}"></p-progressBar>
-            </div>
-            
-        </div>
-        <div class="cv ">
-            <div class="container-fluid">
-                <div class="overlay" *ngIf="isZoomed" (click)="toggleZoom()"></div>
-                <div class="cv-container" [class.zoomed-in]="isZoomed" (click)="isZoomed ? toggleZoom() : isZoomed = true">
-                    <div class="row">
-                      <div class="col-12">
-                        <div class="header">
-                            <img src="assets/images/profil_cv.jpg" alt="Profile Picture" class="profile-pic img-fluid">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row flex-grow-1">
-                      <div class="col-md-4 d-flex flex-column">
-                        <div class="left-column flex-fill">
-                            <div class="block">
-                                <h3>Contact :</h3>
-                                <p><i class="pi pi-map-marker" style="color: slateblue"></i> Pont-Remy, France</p>
-                                <p><i class="pi pi-phone" style="color: slateblue"></i> 06.06.11.21.79</p>
-                                <p><i class="pi pi-at" style="color: slateblue"></i> pac.pierre&#64;gmail.com</p>
-                                <p><i class="pi pi-desktop" style="color: slateblue"></i> pierre-pac.fr</p>
-                                <p><i class="pi pi-github" style="color: slateblue"></i> github.com/PierrePac</p>
-                                <p><i class="pi pi-linkedin" style="color: slateblue"></i> linkedin.com/in/pierre-pac</p>
-                            </div>
-                            <div class="block">
-                                <h3>Synthèse du profil :</h3>
-                                <p>Mon sens de l’organisation, ma rigueur et mon perfectionnisme m’ont amené vers des métiers où l’investissement professionnel était important. Le monde du numérique et plus particulièrement le développement d'application, sont des domaines qui m’attirent. C’est pourquoi aujourd’hui je suis déterminé à en faire mon métier avec autant de sérieux que ce que j’ai réalisé jusqu’à maintenant.
-                                    </p>
-                            </div>
-                            <div class="block">
-                                <h3>Compétences et expertise :</h3>
-                                <div class="logos d-flex justify-content-center align-items-center flex-row flex-wrap">
-                                    <img src="assets/images/logos/html.png" alt="html_logo" class="logo">
-                                    <img src="assets/images/logos/css.png" alt="css_logo" class="logo">
-                                    <img src="assets/images/logos/javascript.png" alt="js_logo" class="logo">
-                                    <img src="assets/images/logos/bootstrap.png" alt="boostrap_logo" class="logo">
-                                    <img src="assets/images/logos/angular.png" alt="angular_logo" class="logo">
-                                    <img src="assets/images/logos/java.png" alt="java_logo" class="logo">
-                                    <img src="assets/images/logos/jquery.png" alt="jquery_logo" class="logo">
-                                    <img src="assets/images/logos/spring.png" alt="spring_logo" class="logo">
-                                    <img src="assets/images/logos/php.png" alt="php_logo" class="logo">
-                                    <img src="assets/images/logos/symfony.png" alt="synfony_logo" class="logo">
-                                    <img src="assets/images/logos/mysql.png" alt="mysql_logo" class="logo">
-                                    <img src="assets/images/logos/postman.png" alt="postman" class="logo">
+            <div class="cv col-11 col-md-5">
+                <div class="container-fluid d-none d-sm-block">
+                    <div class="overlay" *ngIf="isZoomed" (click)="toggleZoom()"></div>
+                    <div class="cv-container" [class.zoomed-in]="isZoomed"
+                        (click)="isZoomed ? toggleZoom() : isZoomed = true">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="header">
+                                    <img src="assets/images/profil_cv.jpg" alt="Profile Picture"
+                                        class="profile-pic img-fluid">
                                 </div>
                             </div>
-                            <div class="block">
-                                <h3>Divers :</h3>
-                                <p>Anglais courant</p>
-                                <p>Permis B</p>
+                        </div>
+                        <div class="row flex-grow-1">
+                            <div class="col-md-4 d-flex flex-column">
+                                <div class="left-column flex-fill">
+                                    <div class="block">
+                                        <h3>Contact :</h3>
+                                        <p><i class="pi pi-map-marker" style="color: slateblue"></i> Pont-Remy, France
+                                        </p>
+                                        <p><i class="pi pi-phone" style="color: slateblue"></i> 06.06.11.21.79</p>
+                                        <p><i class="pi pi-at" style="color: slateblue"></i> pac.pierre&#64;gmail.com
+                                        </p>
+                                        <p><i class="pi pi-desktop" style="color: slateblue"></i> pierre-pac.fr</p>
+                                        <p><i class="pi pi-github" style="color: slateblue"></i> github.com/PierrePac
+                                        </p>
+                                        <p><i class="pi pi-linkedin" style="color: slateblue"></i>
+                                            linkedin.com/in/pierre-pac</p>
+                                    </div>
+                                    <div class="block">
+                                        <h3>Synthèse du profil :</h3>
+                                        <p>Mon sens de l’organisation, ma rigueur et mon perfectionnisme m’ont amené
+                                            vers des métiers où l’investissement professionnel était important. Le monde
+                                            du numérique et plus particulièrement le développement d'application, sont
+                                            des domaines qui m’attirent. C’est pourquoi aujourd’hui je suis déterminé à
+                                            en faire mon métier avec autant de sérieux que ce que j’ai réalisé jusqu’à
+                                            maintenant.
+                                        </p>
+                                    </div>
+                                    <div class="block">
+                                        <h3>Compétences et expertise :</h3>
+                                        <div
+                                            class="logos d-flex justify-content-center align-items-center flex-row flex-wrap">
+                                            <img src="assets/images/logos/html.png" alt="html_logo" class="logo">
+                                            <img src="assets/images/logos/css.png" alt="css_logo" class="logo">
+                                            <img src="assets/images/logos/javascript.png" alt="js_logo" class="logo">
+                                            <img src="assets/images/logos/bootstrap.png" alt="boostrap_logo"
+                                                class="logo">
+                                            <img src="assets/images/logos/angular.png" alt="angular_logo" class="logo">
+                                            <img src="assets/images/logos/java.png" alt="java_logo" class="logo">
+                                            <img src="assets/images/logos/jquery.png" alt="jquery_logo" class="logo">
+                                            <img src="assets/images/logos/spring.png" alt="spring_logo" class="logo">
+                                            <img src="assets/images/logos/php.png" alt="php_logo" class="logo">
+                                            <img src="assets/images/logos/symfony.png" alt="synfony_logo" class="logo">
+                                            <img src="assets/images/logos/mysql.png" alt="mysql_logo" class="logo">
+                                            <img src="assets/images/logos/postman.png" alt="postman" class="logo">
+                                        </div>
+                                    </div>
+                                    <div class="block">
+                                        <h3>Divers :</h3>
+                                        <p>Anglais courant</p>
+                                        <p>Permis B</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-8 d-flex flex-column">
+                                <div class="right-column flex-fill">
+                                    <div class="block">
+                                        <h3>Formation professionnelle :</h3>
+                                        <h4>concepteur développeur d'application</h4>
+                                        <p>Amiens fév 2023 - oct 2023</p>
+                                        <p>Formation intensive de 8 mois pour présenter le titre professionnel de niveau
+                                            6 (bac +3/+4) de concepteur développeur d’applications. Concevoir et
+                                            développer des composants d'interface utilisateur. Concevoir et développer
+                                            la persistance des données- Concevoir et développer une application
+                                            multicouche répartie. Concevoir des applications en intégrant les
+                                            recommandations de sécurité.</p>
+                                        <br>
+                                        <h4>développeur web & web mobile</h4>
+                                        <p>Rochefort nov 2021 - aout 2022</p>
+                                        <p>Formation intensive de 8 mois de développeur full-stack Titre professionnel
+                                            de niveau 5 (BTS/DUT) de développeur web et web mobile. Réalisation de
+                                            projets en: HTML5/CSS3, Javascript, PHP, MySql, JQuery, Bootstrap, PHP,
+                                            Reac, NodeJs et SQL.</p>
+                                        <br>
+                                    </div>
+                                    <div class="block">
+                                        <h3>Expérience professionnelle :</h3>
+                                        <h4>Stage de formation Concepteur développeur d’application</h4>
+                                        <p>Mipih Amiens | 17/07/2023 - 06/10/2023</p>
+                                        <p>Création d'une application web dédié à l'optimisation des entretiens
+                                            techniques, comportant deux interfaces utilisateur distinctes et
+                                            multifonctionnelles. La back-end a été construit en utilisant Java, avec le
+                                            framework Spring Boot, JPA, Hibernate et Docker, tandis que la partie
+                                            front-end a été réalisée avec Angular. Ce projet m'a permis d'affiner mes
+                                            compétences en développement, en gestion de projet et en travail d'équipe,
+                                            tout en garantissant un produit final fonctionnel et performant.</p>
+                                        <br>
+                                        <h4>Stage de formation développeur web</h4>
+                                        <p>Etoile Secours | 25/05/2022 - 01/07/2022</p>
+                                        <p>Création d'un CMS simplifié pour des sociétés d’ambulances à partir duquel
+                                            elles peuvent choisir parmi plusieurs templates proposés et l'implémenter
+                                            très rapidement. Création d'une interface de gestion et d'administration.
+                                            Conception d’une base de données à partir du cahier des charges et des
+                                            besoins client. Projet réalisé en utilisant PHP, MySQL pour le back et HTML,
+                                            CSS, Javascript et Bootstrap pour le front.</p>
+                                        <br>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                      </div>
-                      <div class="col-md-8 d-flex flex-column">
-                        <div class="right-column flex-fill">
-                            <div class="block">
-                                <h3>Formation professionnelle :</h3>
-                                <h4>concepteur développeur d'application</h4>
-                                <p>Amiens fév 2023 - oct 2023</p>
-                                <p>Formation intensive de 8 mois pour présenter le titre professionnel de niveau 6 (bac +3/+4) de concepteur développeur d’applications. Concevoir et développer des composants d'interface utilisateur. Concevoir et développer la persistance des données- Concevoir et développer une application multicouche répartie. Concevoir des applications en intégrant les recommandations de sécurité.</p>
-                                <br>
-                                <h4>développeur web & web mobile</h4>
-                                <p>Rochefort nov 2021 - aout 2022</p>
-                                <p>Formation intensive de 8 mois de développeur full-stack Titre professionnel de niveau 5 (BTS/DUT) de développeur web et web mobile. Réalisation de projets en: HTML5/CSS3, Javascript, PHP, MySql, JQuery, Bootstrap, PHP, Reac, NodeJs et SQL.</p>
-                                <br>
-                            </div>
-                            <div class="block">
-                                <h3>Expérience professionnelle :</h3>
-                                <h4>Stage de formation Concepteur développeur d’application</h4>
-                                <p>Mipih Amiens | 17/07/2023 - 06/10/2023</p>
-                                <p>Création d'une application web dédié à l'optimisation des entretiens techniques, comportant deux interfaces utilisateur distinctes et multifonctionnelles. La back-end a été construit en utilisant Java, avec le framework Spring Boot, JPA, Hibernate et Docker, tandis que la partie front-end a été réalisée avec Angular. Ce projet m'a permis d'affiner mes compétences en développement, en gestion de projet et en travail d'équipe, tout en garantissant un produit final fonctionnel et performant.</p>
-                                <br>
-                                <h4>Stage de formation développeur web</h4>
-                                <p>Etoile Secours | 25/05/2022 - 01/07/2022</p>
-                                <p>Création d'un CMS simplifié pour des sociétés d’ambulances à partir duquel elles peuvent choisir parmi plusieurs templates proposés et l'implémenter très rapidement. Création d'une interface de gestion et d'administration. Conception d’une base de données à partir du cahier des charges et des besoins client. Projet réalisé en utilisant PHP, MySQL pour le back et HTML, CSS, Javascript et Bootstrap pour le front.</p>
-                                <br>
-                            </div>
-                        </div>
-                      </div>
+                        <i class="pi pi-eye"></i>
                     </div>
-                    <i class="pi pi-eye"></i>
                 </div>
-              </div>
-            <button class="btn"><a href="path_to_your_cv.pdf" target="_blank">Télécharger mon CV</a></button>
+                <button class="btn"><a href="path_to_your_cv.pdf" target="_blank">Télécharger mon CV</a></button>
+            </div>
         </div>
     </div>
 </section>

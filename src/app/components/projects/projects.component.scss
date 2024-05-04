@@ -15,7 +15,7 @@
 
     h1 {
       font-weight: bold;
-      font-size: 3rem;
+      font-size: 1.5rem;
       padding-bottom: 2rem;
       color: whitesmoke;
       text-shadow:
@@ -29,7 +29,8 @@
     }
   
     p {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
+      margin: 0 15px;
       color: whitesmoke;
       text-align: justify;
       text-justify: inter-word;
@@ -44,17 +45,16 @@
   
   .title {
     text-align: center;
-    margin: 25px 0 50px 0;
+    margin: 10px 0 15px 0;
     color: whitesmoke;
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   .projects {
-    margin: 5vh 13vw 0 13vw;
+    margin: 5vh 3vw 0 3vw;
   }
 
 .indicators {
-  color: green;
   border-radius: 25px;
   margin: 0 5px;
 }

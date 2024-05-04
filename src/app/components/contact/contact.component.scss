@@ -16,8 +16,7 @@
 .container {
   background-color: #2f0e7b;
   border-radius: 15px;
-  padding: 25px 75px;
-  width: 50vw;
+  width: 80vw;
 }
 
 .contact {
@@ -35,9 +34,22 @@
   border: 1px solid #ffffff; 
 }
 
+textarea{
+  height: 15vh;
+}
+
+input{
+  height: 40px;
+}
+
+label{
+  color: whitesmoke;
+}
+
 .social .links {
   transition: transform 0.3s ease;
-  display: inline-block; 
+  display: inline-block;
+  margin-bottom: 10vh;
 }
 
 .social .links:hover {
