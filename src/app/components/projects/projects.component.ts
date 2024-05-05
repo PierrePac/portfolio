@@ -58,9 +58,9 @@ export class ProjectsComponent implements OnInit {
   updateNumVisible(width: number) {
     if (width < 700) {
       this.numVisible = 1;
-    } else if (width >= 700 && width < 1024) {
+    } else if (width >= 700 && width < 1440) {
       this.numVisible = 2;
-    } else if (width >=1024) {
+    } else if (width >=1440) {
       this.numVisible = 3;
     }
   }
