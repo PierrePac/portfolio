@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-projects',
@@ -6,8 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrl: './projects.component.scss'
 })
 export class ProjectsComponent implements OnInit {
-  
-
+  numVisible = 3;
   projects = [
     {
       title: 'Blue T-Shirt',
@@ -36,8 +35,27 @@ export class ProjectsComponent implements OnInit {
       imageSrc: 'assets/images/projects/project_5.jpg'
     }
   ];
+
+  constructor() {
+    this.updateNumVisible(window.innerWidth)
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event: { target: { innerWidth: number; }; }) {
+    this.updateNumVisible(event.target.innerWidth);
+  }
   ngOnInit(): void {
     
-  }  
+  }
+  
+  updateNumVisible(width: number) {
+    if (width < 700) {
+      this.numVisible = 1;
+    } else if (width >= 700 && width < 1024) {
+      this.numVisible = 2;
+    } else if (width >=1024) {
+      this.numVisible = 3;
+    }
+  }
 
 }

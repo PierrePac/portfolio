@@ -5,7 +5,7 @@
   </div>
   <div class="projects">
     <h1 class="title">Compétences</h1>
-    <p-carousel [value]="projects" [circular]="true" [numVisible]="1" [numScroll]="1" autoplayInterval="3000" [indicatorStyle]="{borderRadius: '15px', margin: '0 5px'}">
+    <p-carousel [value]="projects" [circular]="true" [numVisible]="numVisible" [numScroll]="1" autoplayInterval="3000" [indicatorStyle]="{borderRadius: '15px', margin: '0 5px'}">
       <ng-template pTemplate="item" let-project>
         <div class="border-1 surface-border border-round m-2 text-center py-5 px-3">
           <p-card header="{{ project.title }}" subheader="{{ project.technologies }}" >
