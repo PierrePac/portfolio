@@ -31,4 +31,7 @@ export const environment = {
     project_3: '/assets/images/projects/project_3.webp',
     project_4: '/assets/images/projects/project_4.webp',
     project_5: '/assets/images/projects/project_5.webp',
+
+    // cv
+    cv: '/assets/docs/cv_pierre_pac.pdf',
   };

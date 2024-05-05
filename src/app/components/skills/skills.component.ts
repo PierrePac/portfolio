@@ -36,6 +36,7 @@ export class SkillsComponent {
   postman = environment.postman;
   spring = environment.spring;
   symfony = environment.symfony;
+  cv = environment.cv;
 
   toggleZoom() {
     this.isZoomed = !this.isZoomed;

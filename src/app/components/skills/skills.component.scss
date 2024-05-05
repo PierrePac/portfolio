@@ -249,6 +249,26 @@
   .title {
     font-size: 3.5rem;
   }
+  .cv-container{
+    .row {
+      justify-content: center; 
+      margin: 0 auto; 
+      max-width: 85vw; 
+    }
+  }
+
+  .profile-pic {
+    height: 10vh;
+    width: 10vh;
+  }
+  .header{
+    min-height: 13vh;
+  }
+  .btn {
+    margin-top: 3vh;
+    margin-bottom: 5vh;
+
+  }
 }
 
 @media (min-width: 1024px) {
