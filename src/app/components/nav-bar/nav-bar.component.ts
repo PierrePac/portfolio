@@ -1,5 +1,6 @@
 import { ViewportScroller } from '@angular/common';
 import { Component, HostListener } from '@angular/core';
+import { environment } from '../../../environments/environment';
 
 @Component({
   selector: 'app-nav-bar',
@@ -8,6 +9,7 @@ import { Component, HostListener } from '@angular/core';
 })
 export class NavBarComponent {
   currentSectionId = 'home';
+  logo = environment.logo;
   
   constructor(private viewportScroller: ViewportScroller){}
 

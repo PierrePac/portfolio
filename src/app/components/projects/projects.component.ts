@@ -1,4 +1,5 @@
 import { Component, HostListener, OnInit } from '@angular/core';
+import { environment } from '../../../environments/environment';
 
 @Component({
   selector: 'app-projects',
@@ -7,32 +8,38 @@ import { Component, HostListener, OnInit } from '@angular/core';
 })
 export class ProjectsComponent implements OnInit {
   numVisible = 3;
+  bandeau2 = environment.bandeau_2;
+  project1 = environment.project_1;
+  project2 = environment.project_2;
+  project3 = environment.project_3;
+  project4 = environment.project_4;
+  project5 = environment.project_5;
   projects = [
     {
       title: 'Blue T-Shirt',
       technologies: '$29',
       Description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate nequequas!",
-      imageSrc: 'assets/images/projects/project_1.jpg'
+      imageSrc: this.project1
     },{
       title: 'Green T-Shirt',
       technologies: '$29',
       Description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate nequequas!",
-      imageSrc: 'assets/images/projects/project_2.jpg'
+      imageSrc: this.project2
     },{
       title: 'Yellow T-Shirt',
       technologies: '$29',
       Description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate nequequas!",
-      imageSrc: 'assets/images/projects/project_3.jpg'
+      imageSrc: this.project3
     },{
       title: 'Black T-Shirt',
       technologies: '$29',
       Description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate nequequas!",
-      imageSrc: 'assets/images/projects/project_4.jpg'
+      imageSrc: this.project4
     },{
       title: 'White T-Shirt',
       technologies: '$29',
       Description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate nequequas!",
-      imageSrc: 'assets/images/projects/project_5.jpg'
+      imageSrc: this.project5
     }
   ];
 

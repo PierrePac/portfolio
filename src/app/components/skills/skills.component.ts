@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { environment } from '../../../environments/environment';
 
 @Component({
   selector: 'app-skills',
@@ -20,6 +21,21 @@ export class SkillsComponent {
   loopingValue: number = 75;
   gitValue: number = 75;
   isZoomed: boolean = false;
+  bandeau1 = environment.bandeau_1;
+  bgCvHeader = environment.bg_cv_header;
+  profilCv = environment.profil_cv;
+  angular = environment.angular;
+  bootstrap = environment.bootstrap;
+  css = environment.css;
+  html = environment.html;
+  java = environment.java;
+  javascript = environment.javascript;
+  jquery = environment.jquery;
+  mysql = environment.mysql;
+  php = environment.php;
+  postman = environment.postman;
+  spring = environment.spring;
+  symfony = environment.symfony;
 
   toggleZoom() {
     this.isZoomed = !this.isZoomed;

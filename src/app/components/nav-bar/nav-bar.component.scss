@@ -17,8 +17,10 @@
   
     .navbar-brand {
       flex-grow: 0; 
-      height: 10vh; 
-      width: auto; 
+      width: auto;
+      img{
+        height: 10vh; 
+      }
     }
   
     .navbar-collapse {

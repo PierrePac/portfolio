@@ -1,12 +1,12 @@
 <section id="skills">
-    <div class="bandeau d-flex justify-content-center align-items-center flex-column">
+    <div class="bandeau d-flex justify-content-center align-items-center flex-column" [style.background-image]="'url(' + bandeau1 + ')'">
         <h1>Actuellement :</h1>
         <p>En recherche d'emploi</p>
     </div>
     <h1 class="title">Compétences</h1>
     <div class="skills-cv-container container">
         <div class="row justify-content-evenly">
-            <div class="skills col-9 col-md-8 col-lg-4 ">
+            <div class="skills col-9 col-sm-8 col-md-8 col-lg-4 ">
                 <h2 class="mt-0">Front-end</h2>
                 <div class="skill html" appScrollAnimation>
                     <p>HTML</p>
@@ -79,14 +79,14 @@
 
             </div>
             <div class="cv col-11 col-lg-6">
-                <div class="container-fluid d-none d-sm-block">
+                <div class="container-fluid d-none d-md-block">
                     <div class="overlay" *ngIf="isZoomed" (click)="toggleZoom()"></div>
                     <div class="cv-container" [class.zoomed-in]="isZoomed"
                         (click)="isZoomed ? toggleZoom() : isZoomed = true">
                         <div class="row">
                             <div class="col-12">
-                                <div class="header">
-                                    <img src="assets/images/profil_cv.jpg" alt="Profile Picture"
+                                <div class="header" [style.background-image]="'url(' + bgCvHeader + ')'">
+                                    <img src="{{ profilCv }}" alt="Profile Picture"
                                         class="profile-pic img-fluid">
                                 </div>
                             </div>
@@ -121,19 +121,18 @@
                                         <h3>Compétences et expertise :</h3>
                                         <div
                                             class="logos d-flex justify-content-center align-items-center flex-row flex-wrap">
-                                            <img src="assets/images/logos/html.png" alt="html_logo" class="logo">
-                                            <img src="assets/images/logos/css.png" alt="css_logo" class="logo">
-                                            <img src="assets/images/logos/javascript.png" alt="js_logo" class="logo">
-                                            <img src="assets/images/logos/bootstrap.png" alt="boostrap_logo"
-                                                class="logo">
-                                            <img src="assets/images/logos/angular.png" alt="angular_logo" class="logo">
-                                            <img src="assets/images/logos/java.png" alt="java_logo" class="logo">
-                                            <img src="assets/images/logos/jquery.png" alt="jquery_logo" class="logo">
-                                            <img src="assets/images/logos/spring.png" alt="spring_logo" class="logo">
-                                            <img src="assets/images/logos/php.png" alt="php_logo" class="logo">
-                                            <img src="assets/images/logos/symfony.png" alt="synfony_logo" class="logo">
-                                            <img src="assets/images/logos/mysql.png" alt="mysql_logo" class="logo">
-                                            <img src="assets/images/logos/postman.png" alt="postman" class="logo">
+                                            <img src="{{ html }}" alt="html_logo" class="logo">
+                                            <img src="{{ css }}" alt="css_logo" class="logo">
+                                            <img src="{{ javascript }}" alt="js_logo" class="logo">
+                                            <img src="{{ bootstrap }}" alt="boostrap_logo" class="logo">
+                                            <img src="{{ angular }}" alt="angular_logo" class="logo">
+                                            <img src="{{ java }}" alt="java_logo" class="logo">
+                                            <img src="{{ jquery }}" alt="jquery_logo" class="logo">
+                                            <img src="{{ spring }}" alt="spring_logo" class="logo">
+                                            <img src="{{ php }}" alt="php_logo" class="logo">
+                                            <img src="{{ symfony }}" alt="synfony_logo" class="logo">
+                                            <img src="{{ mysql }}" alt="mysql_logo" class="logo">
+                                            <img src="{{ postman }}" alt="postman" class="logo">
                                         </div>
                                     </div>
                                     <div class="block">

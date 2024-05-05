@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { TypeWriterService } from '../../services/TypeWriter/type-writer.service';
+import { environment } from '../../../environments/environment';
 
 @Component({
   selector: 'app-profil',
@@ -12,6 +13,7 @@ export class ProfilComponent implements OnInit {
   titles = ["..."];
   sppedForward = 200;
   speedBackward = 100;
+  profil = environment.profil;
 
   constructor(private typewriterService: TypeWriterService) {}
 
