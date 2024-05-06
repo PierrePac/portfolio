@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MessageService } from 'primeng/api';
-import { EmailService } from '../../services/Email/email.service';
+import { ContactForm } from '../../models/ContactForm/contact-form';
+import { ApiService } from '../../services/Api/api.service';
 
 @Component({
   selector: 'app-contact',
@@ -12,11 +13,11 @@ import { EmailService } from '../../services/Email/email.service';
 export class ContactComponent implements OnInit {
   contactForm!: FormGroup;
   messageSuccess = { severity: 'success', summary: 'Success', detail: 'Message bien envoyé !' };
-  messageEchec = { severity: 'danger', summary: 'Echec', detail: 'Echec de l\'envoi !' };
+  messageEchec = { severity: 'error', summary: 'Echec', detail: 'Echec de l\'envoi !' };
   
   constructor(private fb: FormBuilder,
               private messageService: MessageService,
-              private emailService: EmailService
+              private apiService: ApiService
             ) { }
   
   ngOnInit(): void {
@@ -32,7 +33,9 @@ export class ContactComponent implements OnInit {
   
   onSubmit() {
     if (this.contactForm.valid && this.contactForm.get('honeypot')?.value === '') {
-      this.emailService.sendEmail(this.contactForm.value).subscribe({
+      const formdata: ContactForm = this.contactForm.value;
+      console.log(formdata);
+      this.apiService.sendContactForm(formdata).subscribe({
         next: (response) => {
           this.contactForm.reset();
           this.showSucess(this.messageSuccess.severity, this.messageSuccess.summary, this.messageSuccess.detail);

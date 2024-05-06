@@ -22,6 +22,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { InputTextModule } from 'primeng/inputtext';
 import { RecaptchaModule, RecaptchaFormsModule } from 'ng-recaptcha';
 import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -50,7 +51,8 @@ import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
     InputTextModule,
     RecaptchaModule,
     RecaptchaFormsModule,
-    NgbCollapseModule
+    NgbCollapseModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

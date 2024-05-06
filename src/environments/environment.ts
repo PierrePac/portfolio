@@ -1,6 +1,7 @@
 // Pour le développement (environment.ts)
 export const environment = {
     production: false,
+    apiUrl: 'http://localhost:8080/api/',
     email: 'pierre.pac@pierrepac.fr',
 
     // Image dossier Divers
