@@ -1,6 +1,7 @@
 // Pour le développement (environment.ts)
 export const environment = {
     production: false,
+    email: 'pierre.pac@pierrepac.fr',
 
     // Image dossier Divers
     bandeau_1: '/assets/images/divers/bandeau_1.webp',

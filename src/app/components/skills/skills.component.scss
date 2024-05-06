@@ -3,7 +3,7 @@
 :host {
   display: block;
   min-height: 100vh;
-  width: 100vw;
+  width: auto;
   background-color: #12013A;
   position: relative;
 }
@@ -281,9 +281,6 @@
 }
 
 @media (min-width: 1024px) {
-  .skills-cv-container {
-    min-width: 100vw;
-  }
 
   .cv-container{
     .row {
