@@ -2,7 +2,7 @@
 export const environment = {
     production: false,
     apiUrl: 'http://localhost:8080/api/',
-    email: 'pierre.pac@pierrepac.fr',
+    email: 'pac.pierre@gmail.com',
 
     // Image dossier Divers
     bandeau_1: '/assets/images/divers/bandeau_1.webp',

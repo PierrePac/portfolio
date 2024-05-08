@@ -14,8 +14,8 @@ public class EmailService {
 
   public void sendSimpleMessage(EmailDto emailDto) {
     SimpleMailMessage message = new SimpleMailMessage();
-    message.setFrom("pierre.pac@pierrepac.fr");
-    message.setTo("pierre.pac@pierrepac.fr");
+    message.setFrom("pac.pierre@gmail.com");
+    message.setTo("pac.pierre@gmail.com");
     message.setSubject(emailDto.getEmail());
     message.setText(emailDto.getMessage());
     mailSender.send(message);

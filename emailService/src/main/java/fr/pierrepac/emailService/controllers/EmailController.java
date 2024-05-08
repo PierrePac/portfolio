@@ -21,7 +21,7 @@ public class EmailController {
     return ResponseEntity.ok("Données du backend");
   }
 
-  @PostMapping("/contact")
+  @PostMapping("/send-email")
   public ResponseEntity<String> sendSimpleEmail(@RequestBody EmailDto emailDto) {
     emailService.sendSimpleMessage(emailDto);
     return ResponseEntity.ok("Données du backend");
