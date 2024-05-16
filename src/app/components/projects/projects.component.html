@@ -7,13 +7,19 @@
     <h1 class="title">Compétences</h1>
     <p-carousel [value]="projects" [circular]="true" [numVisible]="numVisible" [numScroll]="1" autoplayInterval="3000" [indicatorStyle]="{borderRadius: '15px', margin: '0 5px'}">
       <ng-template pTemplate="item" let-project>
-        <div class="border-1 surface-border border-round m-2 text-center py-5 px-3">
-          <p-card header="{{ project.title }}" subheader="{{ project.technologies }}" >
-            <ng-template pTemplate="header">
-              <img alt="Card" src="{{ project.imageSrc }}" />
-            </ng-template>
-            <p>{{ project.Description }}</p>
-          </p-card>
+        <div class="border-1 surface-border border-round m-2 text-center py-5 px-3 h-100">
+          <div class="card h-100">
+            <img class="card-img-top" src="{{ project.imageSrc }}" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">{{ project.title }}</h5>
+              <div class="d-flex flex-row flex-wrap justify-content-evenly">
+                <p>{{ project.technologies }}</p>
+                <p>Réalisé en : {{ project.date | date:'yyyy' }}</p>
+              </div>
+              <p class="card-text">{{ project.Description }}</p>
+              <a href="{{ project.gitLink }}" target="_blank">lien Github</a>
+            </div>
+          </div>
         </div>
       </ng-template>
     </p-carousel>

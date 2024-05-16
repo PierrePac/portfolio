@@ -24,6 +24,7 @@
   .profil-pic {
     border-radius: 70% 30% 70% 30% / 24% 72% 28% 76% ;
     border: 4px solid ;
+    max-width: 150px;
     box-shadow:
       4.5px 4.5px 3.6px rgba(255, 161, 1, 0.024),
       12.5px 12.5px 10px rgba(255, 161, 1, 0.035),
@@ -48,7 +49,10 @@
     }
     p{
       font-size: 1.2rem;
-      margin: 5rem 0;
+    }
+
+    .profil-pic{
+      max-width: 200px;
     }
   }
 
@@ -56,5 +60,9 @@
     .text{
       width: 60vw;
       margin: 0 auto;
+    }
+
+    .profil-pic{
+      max-width: 300px;
     }
   }

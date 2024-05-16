@@ -3,8 +3,12 @@ package fr.pierrepac.emailService.controllers;
 
 import fr.pierrepac.emailService.dtos.EmailDto;
 import fr.pierrepac.emailService.services.EmailService;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.HashMap;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/api")
@@ -22,9 +26,11 @@ public class EmailController {
   }
 
   @PostMapping("/send-email")
-  public ResponseEntity<String> sendSimpleEmail(@RequestBody EmailDto emailDto) {
+  public ResponseEntity<Map<String, String>> sendSimpleEmail(@RequestBody EmailDto emailDto) {
     emailService.sendSimpleMessage(emailDto);
-    return ResponseEntity.ok("Données du backend");
+    Map<String, String> response = new HashMap<>();
+    response.put("message", "Email envoyé avec succès");
+    return new ResponseEntity<>(response, HttpStatus.OK);
   }
 
 }

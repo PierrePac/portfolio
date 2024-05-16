@@ -23,6 +23,9 @@ import { InputTextModule } from 'primeng/inputtext';
 import { RecaptchaModule, RecaptchaFormsModule } from 'ng-recaptcha';
 import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
 import { HttpClientModule } from '@angular/common/http';
+import { InputTextareaModule } from 'primeng/inputtextarea';
+import { FloatLabelModule } from 'primeng/floatlabel';
+import { InputNumberModule } from 'primeng/inputnumber';
 
 
 @NgModule({
@@ -53,6 +56,9 @@ import { HttpClientModule } from '@angular/common/http';
     RecaptchaFormsModule,
     NgbCollapseModule,
     HttpClientModule,
+    InputTextareaModule,
+    FloatLabelModule,
+    InputNumberModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

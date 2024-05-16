@@ -29,30 +29,37 @@
 
                             <div class="form-group mt-4 mb-2">
                                 <span class="p-float-label">
-                                    <input type="text" id="phone" formControlName="phone" pInputText
-                                        class="form-control" />
-                                    <label for="phone">Téléphonne</label>
+                                    <input type="tel" id="phone" formControlName="phone" pInputText class="form-control"/>
+                                    <label for="phone">Téléphone</label>
                                 </span>
-                            </div>
-
-                            <div class="form-group mt-4 mb-2">
-                                <span class="p-float-label">
-                                    <input type="email" id="email" formControlName="email" pInputText
-                                        class="form-control" />
-                                    <label for="email">Email *</label>
-                                </span>
-                                <div *ngIf="contactForm.controls['email'].invalid && contactForm.controls['email'].touched"
-                                    class="invalid-feedback">
-                                    Vous devez renseigner votre e-mail !
+                                <div *ngIf="contactForm.controls['phone'].errors?.['invalidPhone'] && contactForm.controls['phone'].touched && contactForm.controls['phone'].value != ''"
+                                     class="invalid-feedback">
+                                  Veuillez entrer un numéro de téléphone valide !
                                 </div>
                             </div>
 
                             <div class="form-group mt-4 mb-2">
                                 <span class="p-float-label">
+                                  <input type="email" id="email" formControlName="email" pInputText class="form-control" />
+                                  <label for="email">Email *</label>
+                                </span>
+                                <div *ngIf="contactForm.controls['email'].errors?.['required'] && contactForm.controls['email'].touched && contactForm.controls['email'].value != ''"
+                                     class="invalid-feedback">
+                                  L'adresse e-mail est obligatoire !
+                                </div>
+                                <div *ngIf="contactForm.controls['email'].errors?.['invalidEmail'] && contactForm.controls['email'].touched && contactForm.controls['email'].value != ''"
+                                     class="invalid-feedback">
+                                  Veuillez entrer une adresse e-mail valide !
+                                </div>
+                            </div>
+                              
+
+                            <div class="form-group mt-4 mb-2">
+                                <p-floatLabel class="p-float-label">
                                     <textarea id="message" formControlName="message" pInputTextarea
                                         class="form-control"></textarea>
                                     <label for="message">Message *</label>
-                                </span>
+                                </p-floatLabel>
                                 <div *ngIf="contactForm.controls['message'].invalid && contactForm.controls['message'].touched"
                                     class="invalid-feedback">
                                     Un message est requis !
@@ -61,7 +68,9 @@
                             <div style="display: none;">
                                 <input type="text" formControlName="honeypot" tabindex="-1" autocomplete="off">
                             </div>
-                            <button type="submit" pButton label="Envoyer" [disabled]="!contactForm.valid" class="btn btn-primary mt-4 align-items-center"></button>
+                            <p class="asterisk">* Champs obligatoires</p>
+                            <button type="submit" pButton label="Envoyer" [disabled]="!contactForm.valid"
+                                class="btn btn-primary mt-4 align-items-center"></button>
                         </form>
                     </div>
                     <div class="col d-flex flex-column justify-content-center align-items-center">
@@ -81,10 +90,10 @@
                                 <p>80580, Pont Remy</p>
                             </div>
                             <div class="social d-flex flex-row nowrap justify-content-around">
-                                <a href="https://www.linkedin.com/in/pierre-pac" class="links">
+                                <a href="https://www.linkedin.com/in/pierre-pac" class="links" target="_blank">
                                     <i class="pi pi-linkedin me-2" style="color: white; font-size: 2.5rem"></i>
                                 </a>
-                                <a href="https://github.com/PierrePac" class="links">
+                                <a href="https://github.com/PierrePac" class="links" target="_blank">
                                     <i class="pi pi-github me-2" style="color: white; font-size: 2.5rem"></i>
                                 </a>
                             </div>
@@ -94,6 +103,4 @@
             </div>
         </div>
     </div>
-
-
 </section>

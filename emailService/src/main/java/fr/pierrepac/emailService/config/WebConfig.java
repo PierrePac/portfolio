@@ -24,13 +24,15 @@ public class WebConfig {
     UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
     CorsConfiguration config = new CorsConfiguration();
     config.setAllowCredentials(true);
-    config.addAllowedOrigin("http://109.176.199.32");
+    config.addAllowedOrigin("https://www.pierre-pac.fr");
+    config.addAllowedOrigin("https://pierre-pac.fr");
     config.setAllowedHeaders(Arrays.asList(
       HttpHeaders.AUTHORIZATION,
       HttpHeaders.CONTENT_TYPE,
       HttpHeaders.ACCEPT));
     config.setAllowedMethods(Arrays.asList(
       HttpMethod.GET.name(),
+      HttpMethod.OPTIONS.name(),
       HttpMethod.POST.name()));
     config.setMaxAge(MAX_AGE);
     source.registerCorsConfiguration("/**", config);

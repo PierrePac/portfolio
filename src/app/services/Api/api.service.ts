@@ -12,7 +12,7 @@ export class ApiService {
 
   constructor(private http: HttpClient) { }
 
-  sendContactForm(data: ContactForm): Observable<any> {
-    return this.http.post(`${this.API_URL}send-email`, data);
+  sendContactForm(data: ContactForm): Observable<string> {
+    return this.http.post<string>(`${this.API_URL}send-email`, data);
   }
 }

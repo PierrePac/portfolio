@@ -49,10 +49,6 @@
     font-size: 2rem;
   }
 
-  .projects {
-    margin: 5vh 3vw 0 3vw;
-  }
-
 .indicators {
   border-radius: 25px;
   margin: 0 5px;
@@ -76,5 +72,9 @@
 @media (min-width: 1440px){
   .bandeau{
     padding: 2rem 0;
+  }
+  .projects {
+    width: 85vw;
+    margin: 0 auto;
   }
 }
